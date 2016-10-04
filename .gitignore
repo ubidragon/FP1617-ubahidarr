@@ -48,3 +48,5 @@ Temporary Items
 *.xml
 FP1516-ubahidarr.iml
 *.iml
+/bin/
+/run/media/Intercambiador/git/FP1617-ubahidarr/.metadata
