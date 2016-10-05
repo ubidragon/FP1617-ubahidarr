@@ -18,9 +18,9 @@ public class IMC {
 		Double imc2;
 	//dar valores a las variables
 		estatura = 1.81;
-		peso =86;
+		peso =86.0;
 	//formula del IMC
-		imc= peso/(altura*altura);
+		imc= peso/(estatura*estatura);
 	//salida por consola
 		System.out.println("Su IMC es:" + imc);
 
@@ -34,34 +34,26 @@ public class IMC {
 		System.out.println("Introduce tu peso: ");
 		peso2 = sc.nextDouble();
 
-		imc2= peso2/(altura2*altura2);
+		imc2= peso2/(estatura2*estatura2);
 
 		System.out.println("Su IMC es:" + imc2);
-
+		sc.close();
 
 
 	}
 
 	public static EstadoSalud calculaEstadoSalud(Double imc){
-		EstadoSalud salud = null;
+		EstadoSalud res = EstadoSalud.DELGADEZ;
 
-		if (salud <= 7) {
-			res = EstadoSalud.INFANCIA;
-
-		} else if (7 < salud && salud <= 11) {
-			res = EstadoSalud.NIÑEZ;
-		} else if (11 < salud && salud <= 18) {
-			res = EstadoSalud.ADOLESCENCIA;
-		} else if (18 < salud && salud <= 30) {
-			res = EstadoSalud.JUVENTUD;
-		} else if (30 < salud && salud <= 65) {
-			res = EstadoSalud.ADULTEZ;
+		 if (18.5 <= imc && imc < 25) {
+			res = EstadoSalud.NORMAL;
+		} else if (imc < 30) {
+			res = EstadoSalud.PREOBESIDAD;
 		} else {
-			res = EstadoSalud.ANCIANIDAD;
-		}
+			res = EstadoSalud.OBESIDAD;
+		} 
 
-
-		return null;
+		return res;
 	}
 
 
