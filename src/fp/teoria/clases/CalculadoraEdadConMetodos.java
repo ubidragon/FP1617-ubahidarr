@@ -9,29 +9,30 @@ public class CalculadoraEdadConMetodos {
 	public static void main(String[] args) {
 		
 //		leeFechaNacimiento();
-		calcularEdad(leeFechaNacimiento());
-		calcularEtapaVital(calcularEdad(leeFechaNacimiento()).intValue());
+		Long edad = calcularEdad(leeFechaNacimiento());
+		System.out.println("Su edad es: " + edad);
+
+
+		EtapaVital etapa = calcularEtapaVital(calcularEdad(leeFechaNacimiento()).intValue());
+		System.out.println("Su etapa vital es: " + etapa);
 
 	}
 
 	public static LocalDate leeFechaNacimiento() {
 		System.out.println("Introduzca su año de nacimiento: ");
 		Scanner sc1 = new Scanner(System.in);
-		Integer anyo = sc1.nextInt();
+		Integer anyo = sc.nextInt();
 		
 
 		System.out.println("Introduzca su mes de nacimiento: ");
-		Scanner sc2 = new Scanner(System.in);
-		Integer month = sc2.nextInt();
+		Integer month = sc.nextInt();
 		
 
 		System.out.println("Introduzca su dia de nacimiento: ");
-		Scanner sc3 = new Scanner(System.in);
-		Integer day = sc3.nextInt();
+		Integer day = sc.nextInt();
 
-	/**	sc1.close();		
-		sc2.close();
-		sc3.close();**/
+		sc.close();		
+	
 
 		LocalDate fecha =  LocalDate.of(anyo, month, day);
 		System.out.println(fecha);
@@ -66,7 +67,7 @@ public class CalculadoraEdadConMetodos {
 			res = EtapaVital.ANCIANIDAD;
 		}
 		
-		System.out.println(res);
+		
 		return res;
 
 	}
