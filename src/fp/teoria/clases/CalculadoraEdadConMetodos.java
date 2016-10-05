@@ -28,7 +28,11 @@ public class CalculadoraEdadConMetodos {
 		System.out.println("Introduzca su dia de nacimiento: ");
 		Scanner sc3 = new Scanner(System.in);
 		Integer day = sc3.nextInt();
-		
+
+	/**	sc1.close();		
+		sc2.close();
+		sc3.close();**/
+
 		LocalDate fecha =  LocalDate.of(anyo, month, day);
 		System.out.println(fecha);
 		return fecha;
