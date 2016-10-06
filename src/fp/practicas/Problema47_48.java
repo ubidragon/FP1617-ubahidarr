@@ -1,7 +1,9 @@
 package fp.practicas;
 
 import java.util.Scanner;
-import fp.practicas.utiles.EstadoSalud.java;
+
+import fp.practicas.utiles.EstadoSalud;
+
 /*
 Practica 1 de G1 de ISW
 */

@@ -11,19 +11,19 @@ public class CalculadoraEdad {
 		
 //Pedimos al usuario que inserte el año de nacimiento
 		System.out.println("Introduzca su año de nacimiento: ");
-		Scanner sc1 = new Scanner(System.in);
-		Integer anyo = sc1.nextInt();
+		Scanner sc = new Scanner(System.in);
+		Integer anyo = sc.nextInt();
 		
 
 		System.out.println("Introduzca su mes de nacimiento: ");
-		Scanner sc2 = new Scanner(System.in);
-		Integer month = sc2.nextInt();
+	
+		Integer month = sc.nextInt();
 		
 
 		System.out.println("Introduzca su dia de nacimiento: ");
-		Scanner sc3 = new Scanner(System.in);
-		Integer day = sc3.nextInt();
-		
+	
+		Integer day = sc.nextInt();
+		sc.close();
 
 //Operaciones para calcular edad
 		LocalDate fecha =  LocalDate.of(anyo, month, day);

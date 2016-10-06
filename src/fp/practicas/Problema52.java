@@ -1,5 +1,6 @@
 package fp.practicas;
 
+import java.util.Scanner;
 
 public class Problema52 {
 
