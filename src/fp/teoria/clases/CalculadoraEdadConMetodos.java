@@ -52,7 +52,7 @@ public class CalculadoraEdadConMetodos {
 			res = EtapaVital.INFANCIA;
 
 		} else if (7 < edad && edad <= 11) {
-			res = EtapaVital.NIÃ‘EZ;
+			res = EtapaVital.NIÑEZ;
 		} else if (11 < edad && edad <= 18) {
 			res = EtapaVital.ADOLESCENCIA;
 		} else if (18 < edad && edad <= 30) {
