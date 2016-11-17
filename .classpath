@@ -4,9 +4,5 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/jfiglet-0.0.3.jar"/>
 	<classpathentry kind="lib" path="lib/Punto.jar"/>
-	<classpathentry kind="lib" path="lib/fpAeropuertos.jar"/>
-	<classpathentry kind="lib" path="lib/fpBibliotecas.jar"/>
-	<classpathentry kind="lib" path="lib/fpInmuebles.jar"/>
-	<classpathentry kind="lib" path="lib/fpMusica.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
