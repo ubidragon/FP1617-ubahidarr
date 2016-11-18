@@ -12,8 +12,8 @@ public interface Asignatura {
 
 	Integer getCurso();
 
-	String getDepartamento();
-
-	void setDepartamento(String dpto);
+//	String getDepartamento();
+//
+//	void setDepartamento(String dpto);
 
 }

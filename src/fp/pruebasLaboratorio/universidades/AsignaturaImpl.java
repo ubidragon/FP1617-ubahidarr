@@ -9,10 +9,9 @@ public class AsignaturaImpl implements Asignatura {
 	private Double creditos;
 	private TipoAsignatura tipo;
 	private Integer curso;
-	private String dpto;
+//	private String dpto;
 
-	public AsignaturaImpl(String nombre, String codigo, Double creditos, TipoAsignatura tipo, Integer curso,
-			String dpto) {
+	public AsignaturaImpl(String nombre, String codigo, Double creditos, TipoAsignatura tipo, Integer curso) {
 
 		Checkers.check("Creditos no validos ", checkCreditos(creditos));
 		Checkers.check("Curso no valido ", checkCurso(curso));
@@ -23,7 +22,7 @@ public class AsignaturaImpl implements Asignatura {
 		this.creditos = creditos;
 		this.tipo = tipo;
 		this.curso = curso;
-		this.dpto = dpto;
+//		this.dpto = dpto;
 	}
 
 	private Boolean checkCreditos(Double creditos) {
@@ -69,16 +68,16 @@ public class AsignaturaImpl implements Asignatura {
 		return curso;
 	}
 
-	public String getDepartamento() {
-
-		return dpto;
-	}
-
-	public void setDepartamento(String dpto) {
-
-		this.dpto = dpto;
-
-	}
+//	public String getDepartamento() {
+//
+//		return dpto;
+//	}
+//
+//	public void setDepartamento(String dpto) {
+//
+//		this.dpto = dpto;
+//
+//	}
 
 	public int hashCode() {
 

@@ -25,14 +25,14 @@ public class TestBeca extends BecaImpl {
 		
 		System.out.println("\t=======CASO DE PRUEBA 1=======");
 		System.out.println("");
-		Constructor(null,null,null,null,null,null);
+		Constructor(“ABB2024”, 1500, 1, TipoBeca.MOVILIDAD);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 
 	}
 	private static void testConstructor2() {
 		 System.out.println("\t=======CASO DE PRUEBA 2=======");
 		System.out.println("");
-		Constructor(null,null,null,null,null,null);
+		Constructor(null, 1500, 1, TipoBeca.MOVILIDAD);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 		
 		
@@ -40,7 +40,7 @@ public class TestBeca extends BecaImpl {
 	private static void testConstructor3() {
 		 System.out.println("\t=======CASO DE PRUEBA 3=======");
 		System.out.println("");
-		Constructor(null,null,null,null,null,null);
+		Constructor(“ABB2024”, null, 1, TipoBeca.MOVILIDAD);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 		
 		
@@ -48,7 +48,7 @@ public class TestBeca extends BecaImpl {
 	private static void testConstructor4() {
 		 System.out.println("\t=======CASO DE PRUEBA 4=======");
 		System.out.println("");
-		Constructor(null,null,null,null,null,null);
+		Constructor(“ABB2024”, 1500, null, TipoBeca.MOVILIDAD);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 		
 		
@@ -56,7 +56,7 @@ public class TestBeca extends BecaImpl {
 	private static void testConstructor5() {
 		 System.out.println("\t=======CASO DE PRUEBA 5=======");
 		System.out.println("");
-		Constructor(null,null,null,null,null,null);
+		Constructor(“ABB2024”, 1500, 1, null);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 		
 		
