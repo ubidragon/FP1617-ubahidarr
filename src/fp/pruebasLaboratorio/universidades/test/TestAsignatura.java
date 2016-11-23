@@ -83,7 +83,7 @@ public class TestAsignatura {
 	}
 	private static void testConstructor8() {
 		 System.out.println("\t=======CASO DE PRUEBA 8=======");
-		System.out.println("Testteo de check codigo: muy largo");
+		System.out.println("Testeo de check codigo: muy largo");
 		Constructor("Fundamentos de Programacion", "12345678", 7.5, TipoAsignatura.ANUAL, 1);
 		System.out.println("---------FIN DEL CASO DE PRUEBA---------\n");
 		
@@ -112,19 +112,33 @@ public class TestAsignatura {
 
 		try{
 			Asignatura a = new AsignaturaImpl(nombre, codigo, creditos, tipo, curso);
-			System.out.println(a);
+			muestraAsignatura(a);
 		}catch(IllegalArgumentException e){
 
 			System.out.println("************Capturada Excepcion esperada");
 
 		}catch(Exception e){
-//			e.printStackTrace();
+			e.printStackTrace();
 			System.out.println("****\n****\nExcepcion inesperada\n****\n****\nRevisa el codigo");
 		}
 
 	}
 
-
+	private static void muestraAsignatura(Asignatura a){
+		
+		System.out.println("========MOSTRANDO CLASE=======");
+		System.out.println("Asignatura: " + a);
+		System.out.println("Nombre: "+ a.getNombre());
+		System.out.println("Codigo: " +a.getCodigo());
+		System.out.println("TipoAsignatura: " + a.getTipoAsignatura());
+		System.out.println("Creditos: " + a.getCreditos());
+		System.out.println("Curso: " + a.getCurso());
+	
+		
+		
+		
+		
+	}
 
 
 }

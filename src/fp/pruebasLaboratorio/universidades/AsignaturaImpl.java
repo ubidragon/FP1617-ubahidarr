@@ -16,7 +16,9 @@ public class AsignaturaImpl implements Asignatura {
 		Checkers.check("Creditos no validos ", checkCreditos(creditos));
 		Checkers.check("Curso no valido ", checkCurso(curso));
 		Checkers.check("Codigo no valido ", checkCodigo(codigo));
-
+			
+		
+		
 		this.nombre = nombre;
 		this.codigo = codigo;
 		this.creditos = creditos;
