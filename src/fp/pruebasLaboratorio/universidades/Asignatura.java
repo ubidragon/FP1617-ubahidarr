@@ -1,6 +1,6 @@
 package fp.pruebasLaboratorio.universidades;
 
-public interface Asignatura {
+public interface Asignatura extends Comparable<Asignatura> {
 
 	String getNombre();
 

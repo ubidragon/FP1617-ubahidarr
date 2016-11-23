@@ -96,6 +96,12 @@ public class AsignaturaImpl implements Asignatura {
 		return res;
 
 	}
+	
+	public int compareTo(Asignatura a){
+		
+		return getCodigo().compareTo(a.getCodigo());
+		
+	}
 
 	public String toString() {
 
