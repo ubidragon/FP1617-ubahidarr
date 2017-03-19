@@ -14,7 +14,7 @@ public class FactoriaCiclismo {
 	public static EstadisticasCarrera creaEstadisticas2006_16(){
 
 		  List<Ganador> ganadores= Arrays.asList(
-		           creaGanador(2006, "Spain", "Óscar Pereiro", "Caisse d'Epargne–Illes Balears", 3657, Duration.parse("PT89H40M27S"), 0, 8),
+		           creaGanador(2006, "Spain", "ï¿½scar Pereiro", "Caisse d'Epargneï¿½Illes Balears", 3657, Duration.parse("PT89H40M27S"), 0, 8),
 		           creaGanador(2007, "Spain", "Alberto Contador", "Discovery Channel", 3570, Duration.parse("PT91H00M26S"), 1, 4),
 		           creaGanador(2008, "Spain", "Carlos Sastre", "Team CSC", 3559, Duration.parse("PT87H52M52S"), 1, 5),
 		           creaGanador(2009, "Spain", "Alberto Contador", "Astana", 3459, Duration.parse("PT85H48M35S"), 2, 7),
